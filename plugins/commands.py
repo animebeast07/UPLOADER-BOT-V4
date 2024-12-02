@@ -14,11 +14,12 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, 
 from plugins.config import Config
 from plugins.script import Translation
 from pyrogram import Client, filters
+from plugins.config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from plugins.database.add import add_user_to_database
 from plugins.functions.forcesub import handle_force_subscribe
 
-@Client.on_message(filters.command(["start"]) & filters.private)
+@Client.on_message(filters.command(["start"]) & filters.private & filters.user(Config.OWNER_ID))
 async def start(bot, update):
     if not update.from_user:
         return await update.reply_text("I don't know about you sar :(")
