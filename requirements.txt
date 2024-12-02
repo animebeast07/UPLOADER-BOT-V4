@@ -21,4 +21,23 @@ aiofiles
 pyromod==1.2
 flask
 gunicorn==20.1.0
+RUN apt-get update && \
+    apt-get install -y ffmpeg aria2 git wget pv jq python3-dev mediainfo && \
+    rm -rf /var/lib/apt/lists/*
+
+
+# Force reinstall brotli
+RUN pip install --force-reinstall brotli
+
+# Install and upgrade yt-dlp
+RUN pip uninstall -y yt-dlp && \
+    pip install yt-dlp && \
+    pip install --upgrade yt-dlp
+
+
+# Check the yt-dlp installation
+RUN python3 -m pip check yt-dlp
+
+# Verify yt-dlp version
+RUN yt-dlp --version
 
