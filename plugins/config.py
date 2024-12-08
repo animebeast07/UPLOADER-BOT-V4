@@ -11,7 +11,7 @@ logging.basicConfig(
 
 class Config(object):
     
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7722665729:AAG30JhxFJ5chbGF0WoEGMX6TUfsBfNCT78")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     
     API_ID = int(os.environ.get("API_ID", "21740783"))
     
@@ -53,5 +53,5 @@ class Config(object):
     
     TG_MIN_FILE_SIZE = 2097152000
     
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "Rghkklljhhh_bot")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "Awt_url_bot")
                                   
