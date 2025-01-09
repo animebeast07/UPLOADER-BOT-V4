@@ -13,9 +13,9 @@ class Config(object):
     
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     
-    API_ID = int(os.environ.get("API_ID", "21740783"))
+    API_ID = int(os.environ.get("API_ID", "26169469"))
     
-    API_HASH = os.environ.get("API_HASH", "a5dc7fec8302615f5b441ec5e238cd46")
+    API_HASH = os.environ.get("API_HASH", "1e2225f3d65b401d7d5bb921af531712")
     
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     
@@ -39,19 +39,19 @@ class Config(object):
     
     DEF_WATER_MARK_FILE = "UploadLinkToFileBot"
     
-    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Speedwolf1:speedwolf24689@cluster0.rgfywsf.mongodb.net/")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Animebeasttamil:animebeast6374@cluster0.qzrwt.mongodb.net/")
     
     SESSION_NAME = os.environ.get("SESSION_NAME", "UploadLinkToFileBot")
     
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002234974607"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002343864770"))
     
     LOGGER = logging
 
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
     
-    OWNER_ID = int(os.environ.get("OWNER_ID", "6299192020"))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "5326198063"))
     
     TG_MIN_FILE_SIZE = 2097152000
     
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "Awt_url_bot")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "Abt_uploder_bot")
                                   
